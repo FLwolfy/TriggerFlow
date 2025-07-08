@@ -95,23 +95,32 @@ namespace Tools.TriggerFlow.Editor
 
             EditorGUILayout.Space();
 
-            if (GUILayout.Button($"Add {label}"))
+            EditorGUILayout.BeginHorizontal();
             {
-                GenericMenu menu = new GenericMenu();
-                for (int i = 0; i < types.Length; i++)
+                GUILayout.FlexibleSpace(); 
+                
+                float buttonWidth = Mathf.Max(EditorGUIUtility.currentViewWidth - 100, 60);
+                if (GUILayout.Button($"Add {label}", GUILayout.Width(buttonWidth), GUILayout.Height(22)))
                 {
-                    var type = types[i];
-                    menu.AddItem(new GUIContent(type.Name), false, () =>
+                    GenericMenu menu = new GenericMenu();
+                    for (int i = 0; i < types.Length; i++)
                     {
-                        var instance = Activator.CreateInstance(type);
-                        listProp.arraySize++;
-                        var newElem = listProp.GetArrayElementAtIndex(listProp.arraySize - 1);
-                        newElem.managedReferenceValue = instance;
-                        serializedObject.ApplyModifiedProperties();
-                    });
+                        var type = types[i];
+                        menu.AddItem(new GUIContent(type.Name), false, () =>
+                        {
+                            var instance = Activator.CreateInstance(type);
+                            listProp.arraySize++;
+                            var newElem = listProp.GetArrayElementAtIndex(listProp.arraySize - 1);
+                            newElem.managedReferenceValue = instance;
+                            serializedObject.ApplyModifiedProperties();
+                        });
+                    }
+                    menu.ShowAsContext();
                 }
-                menu.ShowAsContext();
+                
+                GUILayout.FlexibleSpace();
             }
+            EditorGUILayout.EndHorizontal();
         }
 
         private Type GetPropertyType(SerializedProperty property)
