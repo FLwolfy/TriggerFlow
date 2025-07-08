@@ -73,3 +73,7 @@ node_modules/
 # Ignore generated package docs or test results
 /[Dd]ocs/
 /[Tt]estResults/
+
+# README and LICENSE meta
+README.md.meta
+LICENSE.meta
