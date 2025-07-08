@@ -74,6 +74,7 @@ node_modules/
 /[Dd]ocs/
 /[Tt]estResults/
 
-# README and LICENSE meta
+# README and LICENSE and package.json meta
 README.md.meta
 LICENSE.meta
+package.json.meta
