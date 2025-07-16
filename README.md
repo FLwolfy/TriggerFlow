@@ -1,6 +1,6 @@
 # TriggerFlow
 
-> A modular trigger flow system package for Unity to easily customize and reuse trigger actions.
+> A modular trigger flow system package for Unity to easily customize and reuse trigger logics.
 
 **TriggerFlow** is a flexible and reusable trigger system built for Unity using `ScriptableObject`s. It allows you to define trigger behavior through modular constraint and action blocks, making your gameplay logic clean, configurable, and easy to extend.
 
