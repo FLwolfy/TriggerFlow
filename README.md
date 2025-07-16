@@ -82,7 +82,7 @@ To try out an example setup:
 3. Expand the Samples section
 4. Click Import on the "Basic Trigger Example"
 
-The sample includes a test scene, tag constraints, and debug actions.
+The sample includes a test scene, a tag constraint, and a debug action.
 
 ---
 
