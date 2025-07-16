@@ -6,11 +6,11 @@ namespace TriggerFlow.Example.Actions
     public class DebugAction : TriggerAction
     {
         public string message = "Triggered!";
-        public bool applyNamePrefix = false;
+        public bool applyNameSuffix = false;
 
         public override void OnPerform(Collider other)
         {
-            string str = applyNamePrefix ? message + ' ' + other.name : message;
+            string str = applyNameSuffix ? message + ' ' + other.name : message;
             Debug.Log(str);
         }
     }

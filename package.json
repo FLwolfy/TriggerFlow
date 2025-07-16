@@ -15,5 +15,12 @@
     "email": "hsuankailiao@gmail.com",
     "url": "https://github.com/FLwolfy/TriggerFlow"
   },
+  "samples": [
+    {
+      "displayName": "Basic Trigger Example",
+      "description": "Demonstrates a basic trigger setup.",
+      "path": "Examples~"
+    }
+  ],
   "dependencies": {}
 }
