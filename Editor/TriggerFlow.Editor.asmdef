@@ -1,0 +1,6 @@
+{
+  "name": "TriggerFlow.Editor",
+  "references": [
+    "TriggerFlow.Runtime"
+  ]
+}

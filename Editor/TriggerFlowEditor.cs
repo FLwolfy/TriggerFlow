@@ -4,10 +4,10 @@ using TriggerFlow.Runtime;
 using UnityEditor;
 using UnityEngine;
 
-namespace Tools.TriggerFlow.Editor
+namespace TriggerFlow.Editor
 {
-    [CustomEditor(typeof(global::TriggerFlow.Runtime.TriggerFlow))]
-    public class TriggerBehaviorEditor : UnityEditor.Editor
+    [CustomEditor(typeof(TriggerFlow.Runtime.TriggerFlow))]
+    public class TriggerFlowEditor : UnityEditor.Editor
     {
         private SerializedProperty m_triggerTypeProp;
         private SerializedProperty m_constraintsProp;
