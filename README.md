@@ -9,10 +9,8 @@
 ## Features
 
 - Modular trigger flow architecture
-- Event-based logic: OnTriggerEnter, OnTriggerStay, OnTriggerExit
 - Customizable constraint and action system
 - Easily composable and reusable trigger assets
-- Editor extension for intuitive workflow
 
 ---
 
